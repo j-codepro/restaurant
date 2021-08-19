@@ -1,0 +1,457 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background:
+    linear-gradient(180deg, rgba(14, 13, 13, 0.922), rgba(54, 54, 54, 0.55) 39.24%),
+    url(eggs.jpg) center center / cover no-repeat;
+    height: 280px;
+    text-align: center;
+    padding: 40px 60px;
+    color: white;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #C89446;
+}
+
+.menu {
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.menu-item:nth-child(2) {
+    margin: 10px;
+}
+
+.menu-item:hover {
+    color: #C89446;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.slogan-welcome {
+    color: #C89446;
+    font-size: 35px;
+}
+
+.slogan-name {
+    margin: 10px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.slogan-speciality {
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.home-content {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.block {
+    margin-bottom: 50px;
+}
+
+.block-img {
+    text-align: center;
+}
+
+.block-img img {
+    border: 1px solid #C89446;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.block .title {
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.block .title::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #C89446;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.title span {
+    color: #C89446;
+    display: block;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.block-body p {
+    display: block;
+    margin: 15px 0;
+    line-height: 25px;
+}
+
+.more a {
+    text-decoration: none;
+    color: #C89446;
+}
+
+.more a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 80px;
+    background: #383838;
+    color: white;
+    padding: 40px 30px;
+}
+
+.footer-title {
+    color: #C89446;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-column {
+    margin-bottom: 50px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+
+.footer-column a:hover {
+    color: #C89446;
+}
+
+.footer-column p, .footer-column li, .footer-column a {
+    font-size: 15px;
+}
+.footer-column p, li {
+    line-height: 25px;
+}
+
+.footer-credits {
+    font-size: 15px;
+    margin-top: 60px;
+}
+
+.footer-credits span {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        height: 400px;
+    }
+    
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slogan {
+        margin-top: 90px;
+    }
+
+    .slogan-welcome {
+        font-size: 40px;
+    }
+
+    .slogan-name {
+        font-size: 60px;
+    }
+
+    .slogan-speciality {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .menu-item:nth-child(2) {
+        margin: 20px;
+    }
+    
+    .block {
+        display: flex;
+    }
+
+    .block-img img {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .block-body {
+        margin: 80px 0 0 80px;
+    }
+
+    .block-right .block-img {
+        position: relative;
+        right: -600px;
+    }
+
+    .block-right .block-body {
+        margin-left: -350px;
+        width: 500px;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        margin-right: 60px;
+        margin-bottom: 0;
+    }
+
+    .footer-column:first-child {
+        width: 35%;
+    }
+
+    .footer-column:last-child {
+        margin-right: 0;
+    }
+}
+
+/* menu page */
+
+.header.second {
+    background:
+    linear-gradient(180deg, rgba(14, 13, 13, 0.922), rgba(54, 54, 54, 0.55) 39.24%),
+    url(salad-chicken.jpg) center center / cover no-repeat;
+}
+
+.menu-content {
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.block-center {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.block-center-title {
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.block-center-title::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #C89446;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.block-center-title span {
+    color: #C89446;
+    display: block;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.block-center p {
+    display: block;
+    margin: 15px 0;
+    line-height: 25px;
+}
+
+.menu-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.menu-content-item {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.menu-item-img {
+    margin-right: 30px;
+}
+
+.menu-item-img img {
+    border-radius: 2px;
+    border: #C89446 solid 1px;
+}
+
+.menu-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-body h3 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.menu-body p {
+    display: block;
+    margin: 12px 0;
+}
+
+.menu-item-price {
+    font-size: 32px;
+    color: #C89446;
+}
+
+.right .menu-item-img {
+    order: 2;
+}
+
+.right .menu-item-img {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.right .menu-body {
+    order: 1;
+    text-align: right;
+}
+
+@media screen and (max-width: 430px) {
+    .menu-content-item {
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    .menu-item-img {
+        margin: 0;
+    }
+
+    .menu-body {
+        text-align: center;
+        margin: 0;
+    }
+
+    .right .menu-item-img {
+        margin: 0;
+        order: 1;
+    }
+
+    .right .menu-body {
+        margin: 0;
+        order: 2;
+        text-align: center;
+    }
+
+    .menu-item-price {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #C89446;
+    }
+}
+
+/* contact page */
+
+
+.contact-content {
+    margin: 0 auto;
+    max-width: 1500px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.header.third {
+    background: #383838;
+    height: 30px;
+}
+
+.info-hours p {
+    display: block;
+}
+
+.info-hours {
+    font-size: 18px;
+    margin: 40px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-hours a {
+    transition: color 0.3s;
+    color: black;
+}
+
+.info-hours a:hover {
+    color: #C89446;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer.third {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 720px) {
+    .info-hours {
+        display: block;
+        margin-top: 30px;
+    }
+}
