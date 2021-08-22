@@ -75,10 +75,9 @@ body {
 }
 
 .home-content {
-    margin: 0 auto;
+    margin: 30px auto 80px auto;
     max-width: 960px;
     padding: 0 20px;
-    margin-top: 30px;
 }
 
 .block {
@@ -136,7 +135,6 @@ body {
 }
 
 .footer {
-    margin-top: 80px;
     background: #383838;
     color: white;
     padding: 40px 30px;
@@ -183,7 +181,7 @@ body {
 
 @media screen and (min-width: 600px) {
     .header {
-        height: 400px;
+        height: 210px;
     }
     
     .topbar {
@@ -192,7 +190,7 @@ body {
     }
 
     .slogan {
-        margin-top: 90px;
+        margin-top: 10px;
     }
 
     .slogan-welcome {
@@ -269,9 +267,8 @@ body {
 }
 
 .menu-content {
-    margin: 0 auto;
+    margin: 30px auto 80px auto;
     max-width: 1300px;
-    margin-top: 30px;
     padding: 0 20px;
 }
 
@@ -414,8 +411,9 @@ body {
 }
 
 .header.third {
-    background: #383838;
-    height: 30px;
+    background:
+    linear-gradient(180deg, rgba(14, 13, 13, 0.922), rgba(54, 54, 54, 0.55) 39.24%),
+    url(../dist/img/contact.jpg) center center / cover no-repeat;
 }
 
 .info-hours p {
@@ -424,7 +422,7 @@ body {
 
 .info-hours {
     font-size: 18px;
-    margin: 40px 0 50px 0;
+    margin: 50px 0 70px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -442,11 +440,19 @@ body {
 .map {
     display: block;
     width: 100%;
+    height: 350px;
     margin-top: 30px;
 }
 
 .footer.third {
     margin-top: 0;
+}
+
+.slogan-contact {
+    font-size: 35px;
+    font-weight: 800;
+    position: relative;
+    margin-top: -20px;
 }
 
 @media screen and (max-width: 720px) {

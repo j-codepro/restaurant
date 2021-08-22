@@ -1,5 +1,6 @@
-import createHome from "./home";
-import createMenu from "./menu";
+import loadHome from "./home";
+import loadMenu from "./menu";
+import loadContact from "./contact";
 
 function createHeader() {
     const header = document.createElement('header');
@@ -18,6 +19,11 @@ function createHeader() {
     aHomeLogo.innerHTML = 'Le Fiasco';
     logo.appendChild(aHomeLogo);
 
+    aHomeLogo.onclick = function() {
+        createHomeHeader();
+        loadHome();
+    }
+
     topbar.appendChild(createNav());
 
     const slogan = document.createElement('div');
@@ -32,6 +38,42 @@ function createHeader() {
     return header;
 }
 
+function createHomeHeader() {
+    const header = document.querySelector('.header');
+    header.classList.remove('second','third');
+
+
+    const slogan = document.querySelector('.slogan');
+    slogan.innerHTML = `
+    <span class="slogan-welcome">Welcome</span>
+    <strong class="slogan-name">Le Fiasco</strong>
+    <span class="slogan-speciality">Mediterranean Speciality</span>
+    `;
+}
+
+function createMenuHeader() {
+    const header = document.querySelector('.header');
+    header.classList.remove('third');
+    header.classList.add('header', 'second');
+    
+    const slogan = document.querySelector('.slogan');
+    slogan.innerHTML = `
+    <strong class="slogan-name">Menu</strong>
+    <span class="slogan-speciality">Mediterranean Speciality</span>
+    `;
+}
+
+function createContactHeader() {
+    const header = document.querySelector('.header');
+    header.classList.add('header', 'third');
+
+    const slogan = document.querySelector('.slogan');
+    slogan.innerHTML = `
+    <strong class="slogan-name">Contact Us</strong>
+    <span class="slogan-contact">__________</span>
+    `;
+}
+
 function createNav() {
     const nav = document.createElement('nav');
     nav.classList.add('menu');
@@ -40,9 +82,24 @@ function createNav() {
     const aMenu = document.createElement('a');
     const aContact = document.createElement('a');
 
-    aHome.href = '#';
-    aMenu.href = '#';
-    aContact.href = '#';
+    aHome.href = '#Home';
+    aMenu.href = '#Menu';
+    aContact.href = '#Contact';
+
+    aHome.onclick = function() {
+        createHomeHeader();
+        loadHome();
+    }
+
+    aMenu.onclick = function() {
+        createMenuHeader();
+        loadMenu();
+    }
+
+    aContact.onclick = function() {
+        createContactHeader();
+        loadContact();
+    }
 
     aHome.classList.add('menu-item');
     aMenu.classList.add('menu-item');
@@ -122,11 +179,22 @@ function createFooter() {
     return footer;
 }
 
+function createMain() {
+    const main = document.createElement('main');
+    main.classList.add('main');
+    main.setAttribute('id', 'main');
+    
+    return main;
+}
+
 function loadInit() {
     const content = document.getElementById('content');
+
     content.appendChild(createHeader());
-    content.appendChild(createHome());
+    content.appendChild(createMain());
     content.appendChild(createFooter());
+
+    loadHome();
 }
 
 export default loadInit;

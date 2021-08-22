@@ -81,4 +81,11 @@ function createBlockRight() {
     return blockRight;
 }
 
-export default createHome;
+function loadHome () {
+    const main = document.getElementById('main');
+    main.textContent = '';
+    main.appendChild(createHome());
+}
+
+
+export default loadHome;
