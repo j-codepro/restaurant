@@ -15,7 +15,7 @@ function createBlockLeft() {
     blockLeft.appendChild(blockImg);
 
     const leftImg = document.createElement('img');
-    leftImg.src = './img/burger.jpg';
+    leftImg.src = '../dist/img/burger.jpg';
     blockImg.appendChild(leftImg);
 
     const blockBody = document.createElement('div');
@@ -53,7 +53,7 @@ function createBlockRight() {
     blockRight.appendChild(blockImg);
 
     const rightImg = document.createElement('img');
-    rightImg.src = './img/crusted-chicken.jpg';
+    rightImg.src = '../dist/img/crusted-chicken.jpg';
     blockImg.appendChild(rightImg);
 
     const blockBody = document.createElement('div');
