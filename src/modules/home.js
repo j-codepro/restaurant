@@ -24,7 +24,7 @@ function createBlockLeft() {
 
     const bodyH2 = document.createElement('h2');
     bodyH2.classList.add('title');
-    bodyH2.innerHTML = '<span>fégetrh h hfghyt htyhy thyh</span>Our gastronomy';
+    bodyH2.innerHTML = '<span>Discover</span>Our gastronomy';
     blockBody.appendChild(bodyH2);
 
     const bodyP = document.createElement('p');
