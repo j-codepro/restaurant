@@ -45,7 +45,7 @@ function createMenu1 () {
     const menu1ImgItem = document.createElement('img');
 
     menu1Img.classList.add('menu-item-img');
-    menu1ImgItem.src = '..dist/img/crusted-chicken-square.jpg';
+    menu1ImgItem.src = 'img/crusted-chicken-square.jpg';
 
     menu1.appendChild(menu1Img);
     menu1Img.appendChild(menu1ImgItem);
@@ -79,7 +79,7 @@ function createMenu2 () {
     const menu2ImgItem = document.createElement('img');
 
     menu2Img.classList.add('menu-item-img');
-    menu2ImgItem.src = '../dist/img/paella-square.jpg';
+    menu2ImgItem.src = 'img/paella-square.jpg';
     menu2.appendChild(menu2Img);
     menu2Img.appendChild(menu2ImgItem);
 
@@ -112,7 +112,7 @@ function createMenu3 () {
     const menu3ImgItem = document.createElement('img');
 
     menu3Img.classList.add('menu-item-img');
-    menu3ImgItem.src = '../dist/img/poisson-square.jpg';
+    menu3ImgItem.src = 'img/poisson-square.jpg';
 
     menu3.appendChild(menu3Img);
     menu3Img.appendChild(menu3ImgItem);
@@ -146,7 +146,7 @@ function createMenu4 () {
     const menu4ImgItem = document.createElement('img');
 
     menu4Img.classList.add('menu-item-img');
-    menu4ImgItem.src = '../dist/img/bobun-light-square.jpg';
+    menu4ImgItem.src = 'img/bobun-light-square.jpg';
     menu4.appendChild(menu4Img);
     menu4Img.appendChild(menu4ImgItem);
 
