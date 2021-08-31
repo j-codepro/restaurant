@@ -5,7 +5,7 @@ body {
 .header {
     background:
     linear-gradient(180deg, rgba(14, 13, 13, 0.922), rgba(54, 54, 54, 0.55) 39.24%),
-    url(../dist/img/eggs.jpg) center center / cover no-repeat;
+    url(img/eggs.jpg) center center / cover no-repeat;
     height: 280px;
     text-align: center;
     padding: 40px 60px;
@@ -263,7 +263,7 @@ body {
 .header.second {
     background:
     linear-gradient(180deg, rgba(14, 13, 13, 0.922), rgba(54, 54, 54, 0.55) 39.24%),
-    url(../dist/img/salad-chicken.jpg) center center / cover no-repeat;
+    url(img/salad-chicken.jpg) center center / cover no-repeat;
 }
 
 .menu-content {
@@ -413,7 +413,7 @@ body {
 .header.third {
     background:
     linear-gradient(180deg, rgba(14, 13, 13, 0.922), rgba(54, 54, 54, 0.55) 39.24%),
-    url(../dist/img/contact.jpg) center center / cover no-repeat;
+    url(img/contact.jpg) center center / cover no-repeat;
 }
 
 .info-hours p {
