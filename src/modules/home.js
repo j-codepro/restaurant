@@ -15,7 +15,7 @@ function createBlockLeft() {
     blockLeft.appendChild(blockImg);
 
     const leftImg = document.createElement('img');
-    leftImg.src = '../dist/img/burger.jpg';
+    leftImg.src = '/img/burger.jpg';
     blockImg.appendChild(leftImg);
 
     const blockBody = document.createElement('div');

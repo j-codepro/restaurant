@@ -45,7 +45,7 @@ function createMenu1 () {
     const menu1ImgItem = document.createElement('img');
 
     menu1Img.classList.add('menu-item-img');
-    menu1ImgItem.src = '/img/crusted-chicken-square.jpg';
+    menu1ImgItem.src = '..dist/img/crusted-chicken-square.jpg';
 
     menu1.appendChild(menu1Img);
     menu1Img.appendChild(menu1ImgItem);
